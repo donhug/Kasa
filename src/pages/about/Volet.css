@@ -1,0 +1,23 @@
+.volet{
+    width: 1023px;
+
+}
+.about__case{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    border-radius:5px;
+    background-color:#FF6060;
+    height:30px;
+    width: 100%;
+    color:white;
+    padding:10px 20px 10px 15px;
+}
+.about__details{
+    display:none;
+    width: 100%;
+    background-color:#EEEEEE;
+    padding:10px 20px 10px 15px;
+    margin-bottom:20px;
+}
