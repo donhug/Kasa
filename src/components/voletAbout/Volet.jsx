@@ -1,6 +1,5 @@
 import './Volet.css'
 import flecheUp from '../../assets/images/fleche_up.png'
-import flecheDown from '../../assets/images/fleche_down.png'
 import {useState} from "react";
 
 const Volet = (props) => {

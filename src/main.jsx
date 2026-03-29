@@ -11,12 +11,6 @@ import Accueil from "./pages/index/Accueil.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <Header />
-      <main className="page">
-          <Accueil />
-      </main>
-      <Footer />
-    </BrowserRouter>
+      <App/>
   </StrictMode>,
 )

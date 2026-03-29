@@ -8,25 +8,24 @@ function Accueil() {
     return <>
     <div className="accueil__main">
         <div className="accueil__entete">
-            <h1>Chez vous, partout et ailleurs</h1>
+            <h1 className="entete__title">Chez vous, partout et ailleurs</h1>
         </div>
         <div className="logement__container">
             <div className="logement__card">
                 {logements.map((logement) => (
                     <Card
                         key={logement.id}
+                        id={logement.id}
                         cover={logement.cover}
                         title={logement.title}
                         name={logement.host.name}
                     />
                 ))}
-
             </div>
         </div>
 
     </div>
     </>
-
 }
 
 export default Accueil

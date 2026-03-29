@@ -1,4 +1,6 @@
 import './Header.css'
+import About from '../../pages/about/A-Propos.jsx'
+import Accueil from '../../pages/index/Accueil.jsx'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/images/LOGO.jpg'
 
@@ -10,7 +12,7 @@ function Header() {
             </div>
             <nav className="header__nav">
                 <Link to="/" className="header__link">Accueil</Link>
-                <Link to="/" className="header__link">A Propos</Link>
+                <Link to="/A-Propos" className="header__link">A Propos</Link>
             </nav>
         </header>
     </>

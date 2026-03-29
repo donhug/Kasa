@@ -16,6 +16,11 @@
     justify-content: center;
     align-items: center;
     color: #EEEEEE;
+    /*filter: brightness(50%);*/
+}
+.entete__title{
+    -webkit-text-stroke: 1px black;
+    font-size: 48px;
 }
 .logement__container{
     background-color: #F6F6F6;
