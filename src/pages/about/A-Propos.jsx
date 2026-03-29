@@ -1,5 +1,5 @@
 import './A-propos.css'
-import Volet from "./Volet.jsx";
+import Volet from "../../components/voletAbout/Volet.jsx";
 
 function About() {
     return <>

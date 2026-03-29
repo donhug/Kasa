@@ -1,0 +1,32 @@
+.accueil__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil__entete{
+    border-radius: 25px;
+    height: 240px;
+    width: 1240px;
+    overflow: hidden;
+    background: url("../../assets/images/Image source 1.jpg") center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+}
+.logement__container{
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    width: 1240px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.logement__card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin:40px;
+}

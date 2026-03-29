@@ -14,8 +14,20 @@
     color:white;
     padding:10px 20px 10px 15px;
 }
+
+.about__btn{
+    cursor: pointer;
+    border:none;
+    background-color:transparent;
+}
+.about__img{
+    transition: transform 0.3s;
+}
+.about__img-open{
+    transition: transform 0.3s;
+    transform: rotate(180deg);
+}
 .about__details{
-    display:none;
     width: 100%;
     background-color:#EEEEEE;
     padding:10px 20px 10px 15px;
