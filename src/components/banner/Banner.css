@@ -1,0 +1,18 @@
+.banner{
+    border-radius: 25px;
+    height: 240px;
+    width: 1240px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+    position:relative;
+}
+
+.banner__title{
+    -webkit-text-stroke: 1px black;
+    font-size: 48px;
+    position: absolute;
+}

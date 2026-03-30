@@ -1,8 +1,8 @@
-import './Volet.css'
+import './Collapse.css'
 import flecheUp from '../../assets/images/fleche_up.png'
 import {useState} from "react";
 
-const Volet = (props) => {
+const Collapse = (props) => {
     const[isOpen ,setIsOpen] = useState(false)
 
     return(
@@ -23,4 +23,4 @@ const Volet = (props) => {
         </>
     );
 }
-export default Volet
+export default Collapse
