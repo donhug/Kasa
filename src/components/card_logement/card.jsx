@@ -2,7 +2,7 @@ import './card.css'
 import { Link } from 'react-router-dom'
 
 const Card = (props) => {
-    return <>
+    return (
         <Link to={`/Logement/${props.id}`}>
             <article className="card">
                 <img className="card__image" src={props.cover} alt={`location de${props.name}`}/>
@@ -11,6 +11,6 @@ const Card = (props) => {
                 </div>
             </article>
         </Link>
-    </>
+    )
 }
 export default Card;

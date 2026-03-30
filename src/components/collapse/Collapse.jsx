@@ -6,21 +6,20 @@ const Collapse = (props) => {
     const[isOpen ,setIsOpen] = useState(false)
 
     return(
-        <>
+        (
             <div className="volet">
                 <div className="about__case">
                     <h2>{props.title}</h2>
                     <button className="about__btn" onClick={()=>setIsOpen(!isOpen)}>
-                        <img src={flecheUp} alt="" className={!isOpen ? "about__img" : "about__img-open"}/>
+                        <img src={flecheUp} alt="" className={!isOpen ? "about__img-open" : "about__img"}/>
                     </button>
                 </div>
-                {isOpen &&
-                    <div className="about__details">
-                        <p>{props.texte}</p>
-                    </div>
-                }
+
+                <div className={`about__details ${isOpen ? "about__details__open" : ""}`}>
+                    <p className="about__texte">{props.texte}</p>
+                </div>
             </div>
-        </>
+        )
     );
 }
 export default Collapse

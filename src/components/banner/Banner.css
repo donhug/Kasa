@@ -10,9 +10,12 @@
     color: #EEEEEE;
     position:relative;
 }
-
+.banner__image{
+    filter: brightness(50%);
+}
 .banner__title{
     -webkit-text-stroke: 1px black;
     font-size: 48px;
     position: absolute;
+    text-shadow: 4px 4px #00000040;
 }

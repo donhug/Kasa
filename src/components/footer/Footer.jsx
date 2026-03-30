@@ -2,7 +2,7 @@ import './Footer.css'
 import logoF from '../../assets/images/LOGO-F.png'
 
 function Footer(){
-    return <>
+    return(
         <footer>
             <div className="footer__logo">
                 <img src={logoF} alt="logo de KASA"/>
@@ -13,7 +13,7 @@ function Footer(){
                 </p>
             </div>
         </footer>
-    </>
+    )
 }
 
 export default Footer;

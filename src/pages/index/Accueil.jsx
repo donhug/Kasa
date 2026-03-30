@@ -11,6 +11,7 @@ function Accueil() {
         <Banner
             image= {image}
             title="Chez vous, partout et ailleurs"
+            dark
         />
         <div className="logement__container">
             <div className="logement__card">
