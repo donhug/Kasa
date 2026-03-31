@@ -7,7 +7,7 @@ const Carrousel = (props) => {
     const [index, setIndex] = useState(0)
     const suivant= () =>{
         setIndex(prev =>{
-                if(prev === pictures.length-1 ){
+                if(prev === props.picture.length-1 ){
                     return 0
                 }
                 return prev +1
@@ -17,7 +17,7 @@ const Carrousel = (props) => {
     const avant=() =>{
         setIndex(prev =>{
                 if(prev === 0 ){
-                    return pictures.length-1
+                    return props.picture.length-1
                 }
                 return prev -1
             }
@@ -26,18 +26,22 @@ const Carrousel = (props) => {
     return <>
 
         <div className="carrousel">
-            <img src={props.picture[index]} alt="photo du logement" />
-            <div>
-                <button onClick={suivant}>
-                    <img src={droite} alt=""/>
-                </button>
-                <button onClick={avant}>
-                    <img src={gauche} alt=""/>
-                </button>
-            </div>
-            <div>
-                <p>{index+1}/{props.picture.length}</p>
-            </div>
+            <img className="carrousel__image" src={props.picture[index]} alt="photo du logement" />
+            {props.picture.length > 1 &&
+                <>
+                    <div className="carrousel__button">
+                        <button onClick={suivant} className="btn__droite">
+                            <img src={droite} alt=""/>
+                        </button>
+                        <button onClick={avant} className="btn__gauche">
+                            <img src={gauche} alt=""/>
+                        </button>
+                    </div>
+                    <div className="carrousel__index">
+                        <p>{index+1}/{props.picture.length}</p>
+                    </div>
+                </>
+            }
         </div>
 
 

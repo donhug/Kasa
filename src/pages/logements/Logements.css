@@ -16,8 +16,6 @@
 .logement__carrousel{
     width: 100%;
     height: 415px;
-    border: 1px solid blue;
-    background-color: blue;
     border-radius: 25px;
 }
 /*css titre + Host*/
