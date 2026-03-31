@@ -1,0 +1,16 @@
+.logement__host{
+    width: 167px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.logement__host p{
+    margin-left: 30px;
+}
+.host__pics{
+    height: 64px;
+    width: 64px;
+    border-radius: 70px;
+}
