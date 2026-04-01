@@ -1,11 +1,12 @@
 import './Logements.css'
 import logements from "../../data/logements.json"
-import {useParams} from "react-router"
+import {useParams} from "react-router-dom"
 import Erreur from "../erreur/Erreur.jsx";
 import Carrousel from "../../components/carrousel/Carrousel.jsx";
 import Title from "../../components/titleLogement/Title.jsx";
 import Host from "../../components/host/Host.jsx";
 import Rating from "../../components/starsLogement/Stars.jsx";
+import Tag from "../../components/tagLogement/Tag.jsx";
 
 function Logement() {
     const {id} = useParams();
@@ -32,7 +33,14 @@ function Logement() {
                 </div>
 
                 <div className="logement__rate">
-                    <div className="logement__tags"></div>
+
+                    <div className="logement__tags">
+                        {logement.tags.map((tags) => (
+                           <Tag
+                               tag={tags}
+                           />
+                        ))}
+                    </div>
                     <Rating
                         rating={logement.rating}
                     />

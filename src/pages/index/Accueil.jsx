@@ -26,7 +26,6 @@ function Accueil() {
                 ))}
             </div>
         </div>
-
     </div>
     </>
 }
