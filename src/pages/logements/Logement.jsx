@@ -22,29 +22,35 @@ function Logement() {
                     />
                 </div>
 
-                <div className="logement__infos">
-                    <Title
-                        titre={logement.title}
-                        position={logement.location}
-                    />
-                    <Host
-                        nom={logement.host.name}
-                        host={logement.host.picture}
-                    />
+                <div className="info__container">
+
+                    <div className="logement__infos">
+                        <Title
+                            titre={logement.title}
+                            position={logement.location}
+                        />
+
+                        <div className="logement__tags">
+                            {logement.tags.map((tags) => (
+                                <Tag
+                                    tag={tags}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="logement__rate">
+                        <Host
+                            nom={logement.host.name}
+                            host={logement.host.picture}
+                        />
+                        <Rating
+                            rating={logement.rating}
+                        />
+                    </div>
+
                 </div>
 
-                <div className="logement__rate">
-                    <div className="logement__tags">
-                        {logement.tags.map((tags) => (
-                           <Tag
-                               tag={tags}
-                           />
-                        ))}
-                    </div>
-                    <Rating
-                        rating={logement.rating}
-                    />
-                </div>
                 <div className="logement__collapse">
                     <Collapse
                         title={"Description"}

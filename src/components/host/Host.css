@@ -4,10 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 25px;
 }
 .logement__host p{
     margin-left: 30px;
+    color: #FF6060;
+    font-weight: lighter;
 }
 .host__pics{
     height: 64px;

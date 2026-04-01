@@ -15,23 +15,26 @@
     border-radius: 25px;
 }
 
-.logement__infos{
-    margin-top: 20px;
+.info__container{
     display: flex;
+    margin-top: 30px;
     justify-content: space-between;
 }
+.logement__infos{
+    display: flex;
+    flex-direction: column;
+}
+
 .logement__rate{
     display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-
+    flex-direction: column;
 }
 .logement__tags{
     width:auto;
     height:25px;
     display:flex;
-    justify-content:center;
     align-items:center;
+    margin-top: 10px;
     gap:10px;
 }
 
