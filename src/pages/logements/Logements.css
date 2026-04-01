@@ -5,9 +5,7 @@
     align-items: center;
 }
 .logement__main{
-    border: 1px solid red;
     width: 1240px;
-    height: 643px;
     margin: 50px;
 }
 
@@ -25,6 +23,7 @@
 .logement__rate{
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 
 }
 .logement__tags{
@@ -34,4 +33,11 @@
     justify-content:center;
     align-items:center;
     gap:10px;
+}
+
+.logement__collapse{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
 }

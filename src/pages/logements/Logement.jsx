@@ -7,6 +7,7 @@ import Title from "../../components/titleLogement/Title.jsx";
 import Host from "../../components/host/Host.jsx";
 import Rating from "../../components/starsLogement/Stars.jsx";
 import Tag from "../../components/tagLogement/Tag.jsx";
+import Collapse from "../../components/collapse/Collapse.jsx";
 
 function Logement() {
     const {id} = useParams();
@@ -33,7 +34,6 @@ function Logement() {
                 </div>
 
                 <div className="logement__rate">
-
                     <div className="logement__tags">
                         {logement.tags.map((tags) => (
                            <Tag
@@ -46,6 +46,15 @@ function Logement() {
                     />
                 </div>
                 <div className="logement__collapse">
+                    <Collapse
+                        title={"Description"}
+                        texte={logement.description}
+                    />
+
+                    <Collapse
+                        title={"Equipments"}
+                        liste={logement.equipments}
+                    />
                 </div>
             </div>
         </div>

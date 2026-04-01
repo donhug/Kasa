@@ -16,7 +16,14 @@ const Collapse = (props) => {
                 </div>
 
                 <div className={`about__details ${isOpen ? "about__details__open" : ""}`}>
-                    <p className="about__texte">{props.texte}</p>
+                    {props.texte &&<p className="about__texte">{props.texte}</p>}
+                    {props.liste &&
+                        <ul className="liste">
+                            {props.liste.map((equipments) =>(
+                                <li key={equipments}> {equipments}</li>
+                            ))}
+                        </ul>
+                    }
                 </div>
             </div>
         )
