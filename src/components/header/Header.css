@@ -25,8 +25,11 @@ header{
         width: 100px;
     }
     header{
-        margin-top: 10px;
-        margin-left:10px ;
-        margin-right: 10px;
+        margin: 25px;
+        gap: 10px;
+        align-items: center;
+    }
+    .header__nav{
+        gap: 50px;
     }
 }
