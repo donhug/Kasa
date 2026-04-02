@@ -56,3 +56,12 @@
     gap: 8px;
     padding: 10px;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+    .volet{
+        width:100%;
+        max-width: 768px;
+        font-size: 15px;
+    }
+}

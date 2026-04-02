@@ -19,12 +19,14 @@ header{
     text-decoration: underline;
 }
 
-/* tablette */
-@media (max-width: 1024px) {
-    /* styles tablette */
-}
-
 /* mobile */
 @media (max-width: 768px) {
-
+    .header__logo img{
+        width: 100px;
+    }
+    header{
+        margin-top: 10px;
+        margin-left:10px ;
+        margin-right: 10px;
+    }
 }

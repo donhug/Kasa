@@ -29,14 +29,12 @@ const Carrousel = (props) => {
             <img className="carrousel__image" src={props.picture[index]} alt="photo du logement" />
             {props.picture.length > 1 &&
                 <>
-                    <div className="carrousel__button">
-                        <button onClick={suivant} className="btn__droite">
-                            <img src={droite} alt=""/>
-                        </button>
-                        <button onClick={avant} className="btn__gauche">
-                            <img src={gauche} alt=""/>
-                        </button>
-                    </div>
+                    <button onClick={suivant} className="btn__droite">
+                        <img src={droite} alt=""/>
+                    </button>
+                    <button onClick={avant} className="btn__gauche">
+                        <img src={gauche} alt=""/>
+                    </button>
                     <div className="carrousel__index">
                         <p>{index+1}/{props.picture.length}</p>
                     </div>

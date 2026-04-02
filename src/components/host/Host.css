@@ -16,3 +16,16 @@
     width: 64px;
     border-radius: 70px;
 }
+@media (max-width: 768px) {
+    .logement__host {
+        gap: 10px;
+    }
+    .logement__host p{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .host__pics{
+        height: 32px;
+        width: 32px;
+    }
+}

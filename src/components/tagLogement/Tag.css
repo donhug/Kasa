@@ -2,11 +2,18 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    width:115px;
+    width:120px;
     height:25px;
     border-radius:10px;
     background: #FF6060;
     color:white;
     font-size: 14px;
     white-space: nowrap;
+    padding:3px;
+}
+
+@media (max-width: 768px) {
+    .tags{
+        width:90%;
+    }
 }

@@ -3,6 +3,7 @@
     height: 100%;
     border-radius: 25px;
     position: relative;
+    object-fit: cover;
 }
 .carrousel__image{
     width: 100%;
@@ -18,19 +19,23 @@
     right: 50%;
 }
 
-.btn__droite{
-    position: absolute;
-    border: none;
-    cursor: pointer;
-    background: transparent;
-    left: 560px;
-}
 .btn__gauche{
     position: absolute;
     border: none;
     cursor: pointer;
     background: transparent;
-    right: 560px;
+    left: 20px;
+    top: 35%;
+    transform: translateY(50%);
+}
+.btn__droite{
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    right: 20px;
+    top: 35%;
+    transform: translateY(50%);
 }
 .carrousel__index{
     position: absolute;
@@ -40,16 +45,14 @@
     z-index: 2;
 }
 
-@media (max-width: 1024px) {
-    .btn__droite{
-        left: 400px;
-    }
-    .btn__gauche{
-        right: 400px;
-    }
-}
-
-/* mobile */
 @media (max-width: 768px) {
-
+    .carrousel{
+        height: 255px;
+    }
+    .btn__gauche img{
+        width: 15px;
+    }
+    .btn__droite img{
+        width: 15px;
+    }
 }

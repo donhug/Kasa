@@ -33,6 +33,7 @@ function Logement() {
                         <div className="logement__tags">
                             {logement.tags.map((tags) => (
                                 <Tag
+                                    key={tags}
                                     tag={tags}
                                 />
                             ))}

@@ -1,4 +1,5 @@
 .accueil__main{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +29,7 @@
 
     .logement__card{
         grid-template-columns: repeat(2, 350px);
-        gap: 60px;
+        gap: 20px;
         margin:20px;
         justify-content: center;
     }
@@ -41,5 +42,16 @@
 
 /* mobile */
 @media (max-width: 768px) {
-
+    .logement__container{
+        background-color: white;
+        margin-top: 10px;
+    }
+    .logement__card{
+        grid-template-columns: 1fr;
+    }
+    .logement__card a{
+        display: block;
+        width:100%;
+        height:225px;
+    }
 }
