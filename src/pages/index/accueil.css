@@ -7,7 +7,8 @@
 .logement__container{
     background-color: #F6F6F6;
     border-radius: 25px;
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -16,4 +17,29 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin:40px;
+}
+
+/* tablette */
+@media (max-width: 1024px) {
+    .logement__container{
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .logement__card{
+        grid-template-columns: repeat(2, 350px);
+        gap: 60px;
+        margin:20px;
+        justify-content: center;
+    }
+    .logement__card a{
+        display: block;
+        width:335px;
+        height:255px;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
 }

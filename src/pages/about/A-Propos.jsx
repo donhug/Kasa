@@ -5,7 +5,7 @@ import image from "../../assets/images/Image source 2.jpg";
 
 function About() {
     return <>
-        <div className="about__main">
+        <div className="about__main main">
             <Banner
                 image= {image}
             />

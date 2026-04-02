@@ -39,3 +39,17 @@
     color: white;
     z-index: 2;
 }
+
+@media (max-width: 1024px) {
+    .btn__droite{
+        left: 400px;
+    }
+    .btn__gauche{
+        right: 400px;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+}

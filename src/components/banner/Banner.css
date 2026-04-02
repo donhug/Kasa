@@ -9,6 +9,7 @@
     align-items: center;
     color: #EEEEEE;
     position:relative;
+    margin-top: 30px;
 }
 .banner__image{
     filter: brightness(50%);
@@ -18,4 +19,16 @@
     font-size: 48px;
     position: absolute;
     text-shadow: 4px 4px #00000040;
+}
+
+/* tablette */
+@media (max-width: 1024px) {
+    .banner{
+        width: 900px;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
 }

@@ -11,3 +11,15 @@
     align-items: center;
     gap: 30px;
 }
+
+/* tablette */
+@media (max-width: 1024px) {
+    .about__main{
+        width: 900px;
+    }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+}

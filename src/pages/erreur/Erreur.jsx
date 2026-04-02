@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Error() {
     return <>
-        <div className="error">
+        <div className="error main">
             <div className="error__code">
                 <h1 className="error__404">
                     404

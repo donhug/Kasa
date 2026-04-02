@@ -18,3 +18,13 @@ header{
 .active{
     text-decoration: underline;
 }
+
+/* tablette */
+@media (max-width: 1024px) {
+    /* styles tablette */
+}
+
+/* mobile */
+@media (max-width: 768px) {
+
+}

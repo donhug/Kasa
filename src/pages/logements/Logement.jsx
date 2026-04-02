@@ -14,7 +14,7 @@ function Logement() {
     const logement = logements.find((logement) => logement.id === id)
     if (logement === undefined) return (<Erreur/>)
     return <>
-        <div className="container">
+        <div className="container main">
             <div className="logement__main">
                 <div className="logement__carrousel">
                     <Carrousel

@@ -7,7 +7,7 @@ import image from "../../assets/images/Image source 1.jpg";
 
 function Accueil() {
     return <>
-    <div className="accueil__main">
+    <div className="accueil__main main">
         <Banner
             image= {image}
             title="Chez vous, partout et ailleurs"

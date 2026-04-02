@@ -4,7 +4,7 @@ import logo from '../../assets/images/LOGO.jpg'
 
 function Header() {
     return (
-        <header>
+        <header >
             <div className="header__logo">
                 <img src={logo} alt="logo de KASA"/>
             </div>
