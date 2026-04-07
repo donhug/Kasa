@@ -55,4 +55,7 @@
     .btn__droite img{
         width: 15px;
     }
+    .carrousel__index{
+        display: none;
+    }
 }

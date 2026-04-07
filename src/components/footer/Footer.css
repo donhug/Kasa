@@ -27,5 +27,8 @@ footer{
 
 /* mobile */
 @media (max-width: 768px) {
-
+    .footer__txt{
+        font-size: 12px;
+        width: 100px;
+    }
 }

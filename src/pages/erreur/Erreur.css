@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    flex: 1;
 }
 .error__oups,
 .error__404{
